@@ -4,6 +4,10 @@ A responsive full-stack To-Do application that allows users to create, manage, s
 
 Built as a full-stack development project using React, Node.js, Express, and SQLite.
 
+## 🌐 Live Demo
+
+[View the live application](https://to-do-app-tdfb.onrender.com)
+
 ## ✨ Features
 
 - Add new tasks
@@ -62,7 +66,7 @@ To-Do App/
 ### 1. Clone the repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/TemitayoObasa/To-Do-App.git
 ```
 
 ### 2. Navigate into the project
@@ -109,7 +113,9 @@ Inside the `client` folder:
 npm start
 ```
 
-The frontend will run on the local development address provided by the React setup.
+TThe frontend will run on the local development address provided by Parcel, usually:
+
+http://localhost:1234
 
 ## 🔌 API Endpoints
 
