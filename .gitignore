@@ -8,4 +8,7 @@ server/node_modules/
 dist/
 build/
 
+.parcel-cache/
+server/public/
+
 .DS_Store

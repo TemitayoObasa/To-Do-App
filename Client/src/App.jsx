@@ -23,7 +23,7 @@ function App() {
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/todos")
+    fetch("/api/todos")
       .then((response) => response.json())
       .then((data) => {
         setTasks(data);
@@ -38,7 +38,7 @@ function App() {
       return;
     }
 
-    fetch("http://localhost:5000/api/todos", {
+    fetch("/api/todos", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -61,7 +61,7 @@ function App() {
   };
 
   const toggleComplete = (task) => {
-    fetch(`http://localhost:5000/api/todos/${task.id}`, {
+    fetch(`/api/todos/${task.id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json"
@@ -86,7 +86,7 @@ function App() {
   };
 
   const deleteTask = (id) => {
-    fetch(`http://localhost:5000/api/todos/${id}`, {
+    fetch(`/api/todos/${id}`, {
       method: "DELETE"
     })
       .then((response) => response.json())
@@ -110,7 +110,7 @@ function App() {
     return;
   }
 
-  fetch(`http://localhost:5000/api/todos/${editingTask.id}`, {
+  fetch(`/api/todos/${editingTask.id}`, {
     method: "PUT",
     headers: {
       "Content-Type": "application/json"
